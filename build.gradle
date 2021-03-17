@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id "application"
+}
+
+group 'io.joliveira.kafka'
+
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "io.joliveira.kafka.Main"
+
+dependencies {
+    compile 'org.apache.kafka:kafka-clients:2.7.0'
+    compile 'org.slf4j:slf4j-api:1.7.+'
+    compile 'org.slf4j:slf4j-simple:1.7.+'
+    compile 'io.micrometer:micrometer-registry-statsd:1.6.3'
+
+}
